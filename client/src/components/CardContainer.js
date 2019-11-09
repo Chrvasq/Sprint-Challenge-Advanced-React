@@ -5,7 +5,7 @@ const CardContainer = props => {
   return (
     <div className="card-container">
       {props.data.map(player => {
-        return <Card player={player} />;
+        return <Card key={player.id} player={player} />;
       })}
     </div>
   );
