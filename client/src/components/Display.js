@@ -19,6 +19,7 @@ export class Display extends Component {
   render() {
     return (
       <div className="display">
+        <h2>Players</h2>
         <CardContainer data={this.state.data} />
       </div>
     );

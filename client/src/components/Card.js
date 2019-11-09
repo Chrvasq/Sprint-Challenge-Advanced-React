@@ -5,7 +5,7 @@ const Card = props => {
     <div className="card">
       <h2>{props.player.name}</h2>
       <p>{props.player.country}</p>
-      <p>{props.player.searches}</p>
+      <p>Number of searches: {props.player.searches}</p>
     </div>
   );
 };
