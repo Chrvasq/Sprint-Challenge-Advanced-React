@@ -1,4 +1,5 @@
 import React from "react";
+import useDarkMode from "../hooks/useDarkMode";
 
 const Nav = () => {
   const [darkMode, setDarkMode] = useDarkMode();

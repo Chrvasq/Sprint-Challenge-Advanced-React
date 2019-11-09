@@ -1,7 +1,7 @@
 import React from "react";
 import { Display } from "./components/Display";
 import Nav from "./components/Nav";
-import "./App.css";
+import "./styles.scss";
 
 function App() {
   return (
