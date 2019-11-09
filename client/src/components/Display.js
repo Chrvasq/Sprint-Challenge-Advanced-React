@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import Card from "./Card";
+import CardContainer from "./CardContainer";
 import axios from "axios";
 
 export class Display extends Component {
@@ -11,7 +11,6 @@ export class Display extends Component {
     axios
       .get("http://localhost:5000/api/players")
       .then(res => {
-        console.log(res.data);
         this.setState({ data: res.data });
       })
       .catch(err => console.log("Error: ", err));
@@ -20,9 +19,7 @@ export class Display extends Component {
   render() {
     return (
       <div>
-        {this.state.data.map(player => {
-          return <Card player={player} />;
-        })}
+        <CardContainer data={this.state.data} />
       </div>
     );
   }
